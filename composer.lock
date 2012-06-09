@@ -1,0 +1,18 @@
+{
+    "hash": "3a295f11b576ee9c60bb6347a9d9c459",
+    "packages": [
+        {
+            "package": "zendframework/zendframework",
+            "version": "dev-master",
+            "source-reference": "12ccc9c54cfd3bcad2c8e39cfe257104b6d55659"
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "zendframework/zendframework": 20
+    }
+}
