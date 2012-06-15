@@ -34,8 +34,8 @@ return array(
                         'controller' => 'members',
                         'action'     => 'index',
                     ),
-                    'may_terminate' => true,
                 ),
+                'may_terminate' => true,
                 'child_routes' => array(
                     'userpage' => array(
                         'type' => 'Segment',
