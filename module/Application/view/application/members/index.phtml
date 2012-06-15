@@ -1,0 +1,24 @@
+<h1>Our Members</h1>
+<div class="well">
+    <ul class="thumbnails">
+        <li class="span1" style="text-align:center">
+            <a href="<?php echo $this->url('members/userpage', array('username'=>'adamlundrigan')); ?>">
+                <?php echo $this->gravatar('adam@lundrigan.ca'); ?>
+                Adam Lundrigan
+            </a>
+        </li>
+        <li class="span1" style="text-align:center">
+            <a href="<?php echo $this->url('members/userpage', array('username'=>'timoram')); ?>">
+                <?php echo $this->gravatar('mitmaro@gmail.com'); ?>
+                Tim Oram
+            </a>
+        </li>
+        <li class="span1" style="text-align:center">
+            <a href="<?php echo $this->url('members/userpage', array('username'=>'jasongedge')); ?>">
+                <?php echo $this->gravatar('inferno1386@gmail.com'); ?>
+                Jason Gedge
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="alert alert-info"><strong>Are you missing?</strong> You can add yourself by <a href="https://github.com/nlwebdevs/website/blob/master/module/Application/view/application/members/index.phtml" target="_blank">editing the source</a> and then <a href="https://help.github.com/articles/using-pull-requests" target="_blank">sending in a pull request via GitHub</a>.  Easy peasy!</div>

@@ -26,11 +26,38 @@ return array(
                     ),
                 ),
             ),
+            'members' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route' => '/members',
+                    'defaults' => array(
+                        'controller' => 'members',
+                        'action'     => 'index',
+                    ),
+                    'may_terminate' => true,
+                ),
+                'child_routes' => array(
+                    'userpage' => array(
+                        'type' => 'Segment',
+                        'options' => array(
+                            'route' => '/:username',
+                            'constraints' => array(
+                                'username' => '[a-zA-Z0-9_-]+',
+                            ),
+                            'defaults' => array(
+                                'controller' => 'members',
+                                'action'     => 'view-user',
+                            ),
+                        ),
+                    ),
+                ),
+            ),
         ),
     ),
     'controller' => array(
         'classes' => array(
-            'index' => 'Application\Controller\IndexController'
+            'index'     => 'Application\Controller\IndexController',
+            'members'   => 'Application\Controller\MembersController',
         ),
     ),
     'view_manager' => array(
