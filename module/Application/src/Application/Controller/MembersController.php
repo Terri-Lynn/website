@@ -2,10 +2,10 @@
 
 namespace Application\Controller;
 
-use Zend\Mvc\Controller\ActionController,
+use Zend\Mvc\Controller\AbstractActionController,
     Zend\View\Model\ViewModel;
 
-class MembersController extends ActionController
+class MembersController extends AbstractActionController
 {
     public function indexAction()
     {
@@ -14,7 +14,7 @@ class MembersController extends ActionController
 
     public function viewUserAction()
     {
-        $username = $this->getEvent()->getRouteMatch()->getParam('username');
+        $username = $this->plugin('params')->fromRoute('username');
         $vm = new ViewModel();
         $vm->setTemplate('application/members/userpage/'.$username);
         return $vm;
