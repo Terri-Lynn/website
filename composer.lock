@@ -4,13 +4,7 @@
         {
             "package": "zendframework/zendframework",
             "version": "dev-master",
-            "alias-pretty-version": "2.0.x-dev",
-            "alias-version": "2.0.9999999.9999999-dev"
-        },
-        {
-            "package": "zendframework/zendframework",
-            "version": "dev-master",
-            "source-reference": "47723f076d91ccfd57a03fb71b1182c09aaa3538"
+            "source-reference": "3b4494620b5391a61b274549e8a9800524305fa3"
         }
     ],
     "packages-dev": null,
