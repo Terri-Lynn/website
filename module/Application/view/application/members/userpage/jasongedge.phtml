@@ -1,0 +1,18 @@
+<ul class="breadcrumb">
+    <li><a href="<?php echo $this->url('home'); ?>">Home</a> <span class="divider">/</span></li>
+    <li><a href="<?php echo $this->url('members'); ?>">Members</a> <span class="divider">/</span></li>
+    <li class="active"><a href="<?php echo $this->url('members/userpage', array('username'=>'jasongedge')); ?>">Jason Gedge</a></li>
+</ul>
+
+<div class="row">
+<div class="span1" style="text-align:center">
+    <?php echo $this->gravatar('inferno1386@gmail.com'); ?><br />
+    <a href="http://github.com/thegedge" target="_blank">GitHub</a><br />
+    <a href="http://twitter.com/thegedge" target="_blank">Twitter</a><br />
+    <a href="http://gedgedev.blogspot.com" target="_blank">Blog</a><br />
+</div>
+<div class="span10">
+    <h1>Jason Gedge</h1>
+    <p>Likes to program. Especially enjoys a good challenge in the field of computer graphics and computer vision.</p>
+</div>
+</div>
