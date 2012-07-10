@@ -1,4 +1,3 @@
-
 <ul class="breadcrumb">
     <li><a href="<?php echo $this->url('home'); ?>">Home</a> <span class="divider">/</span></li>
     <li class="active"><a href="<?php echo $this->url('members'); ?>">Members</a>
@@ -23,6 +22,12 @@
             <a href="<?php echo $this->url('members/userpage', array('username'=>'jasongedge')); ?>">
                 <?php echo $this->gravatar('inferno1386@gmail.com'); ?>
                 Jason Gedge
+            </a>
+        </li>
+        <li class="span1" style="text-align:center">
+            <a href="<?php echo $this->url('members/userpage', array('username'=>'gerryhall')); ?>">
+                <img src="http://www.gerryhall.ca/images/uploads/344d17f547fd161b.png" alt="avatar" />
+                Gerry Hall
             </a>
         </li>
     </ul>
